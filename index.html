@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>PAYLO — Know your pay. Own your flow.</title>
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body data-theme="light">
+<div id="onboarding-root"></div>
+
+<div id="app" class="app hidden">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-mark">PAYLO</span>
+      <span class="brand-tagline">Know your pay. Own your flow.</span>
+    </div>
+    <nav class="nav-list" id="nav-list">
+      <button class="nav-item" data-view="dashboard" aria-label="Dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></button>
+      <button class="nav-item" data-view="calendar" aria-label="Calendar"><i data-lucide="calendar-days"></i><span>Calendar</span></button>
+      <button class="nav-item" data-view="history" aria-label="History"><i data-lucide="history"></i><span>History</span></button>
+      <button class="nav-item" data-view="loans" aria-label="Loans"><i data-lucide="landmark"></i><span>Loans</span></button>
+      <button class="nav-item" data-view="settings" aria-label="Settings"><i data-lucide="settings"></i><span>Settings</span></button>
+    </nav>
+    <div class="sidebar-footer">
+      <span>PAYLO v1.2.2</span>
+    </div>
+  </aside>
+
+  <main class="main" id="main-content" role="main"></main>
+
+  <button class="fab-add" id="fab-add-btn" aria-label="Add Expense"><i data-lucide="plus"></i></button>
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Primary">
+    <button class="bottom-nav-item" data-view="dashboard" aria-label="Dashboard"><i data-lucide="layout-dashboard"></i></button>
+    <button class="bottom-nav-item" data-view="calendar" aria-label="Calendar"><i data-lucide="calendar-days"></i></button>
+    <button class="bottom-nav-item" data-view="history" aria-label="History"><i data-lucide="history"></i></button>
+    <button class="bottom-nav-item" data-view="loans" aria-label="Loans"><i data-lucide="landmark"></i></button>
+    <button class="bottom-nav-item" data-view="settings" aria-label="Settings"><i data-lucide="settings"></i></button>
+  </nav>
+</div>
+
+<div id="modal-root" class="modal-root" aria-live="polite"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

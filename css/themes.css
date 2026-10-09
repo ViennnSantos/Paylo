@@ -1,0 +1,74 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.14);
+  --transition-fast: 140ms ease;
+  --transition-med: 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  --green: #16a34a;
+  --green-soft: rgba(22, 163, 74, 0.12);
+  --red: #e11d48;
+  --red-soft: rgba(225, 29, 72, 0.12);
+  --amber: #d97706;
+  --amber-soft: rgba(217, 119, 6, 0.12);
+  --blue: #2563eb;
+  --blue-soft: rgba(37, 99, 235, 0.12);
+}
+
+body[data-theme="light"] {
+  --bg-app: #f5f6f8;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #fafbfc;
+  --bg-elevated: #ffffff;
+  --border-subtle: #eaecef;
+  --border-strong: #dde1e6;
+  --text-primary: #14151a;
+  --text-secondary: #5c6270;
+  --text-tertiary: #9aa0ac;
+  --accent: #6c5ce7;
+  --accent-soft: rgba(108, 92, 231, 0.12);
+  --accent-contrast: #ffffff;
+  --scrim: rgba(20, 21, 26, 0.45);
+}
+
+body[data-theme="dim"] {
+  --bg-app: #1b1d24;
+  --bg-surface: #23262f;
+  --bg-surface-alt: #2a2d38;
+  --bg-elevated: #2c2f3a;
+  --border-subtle: #343844;
+  --border-strong: #3d4150;
+  --text-primary: #f2f3f6;
+  --text-secondary: #a8adba;
+  --text-tertiary: #767c8c;
+  --accent: #8b7bf0;
+  --accent-soft: rgba(139, 123, 240, 0.18);
+  --accent-contrast: #ffffff;
+  --scrim: rgba(0, 0, 0, 0.55);
+}
+
+body[data-theme="dark"] {
+  --bg-app: #06070a;
+  --bg-surface: #0e0f13;
+  --bg-surface-alt: #131419;
+  --bg-elevated: #16171d;
+  --border-subtle: #1e2027;
+  --border-strong: #282a33;
+  --text-primary: #f4f5f7;
+  --text-secondary: #9498a3;
+  --text-tertiary: #646874;
+  --accent: #9b8cf5;
+  --accent-soft: rgba(155, 140, 245, 0.16);
+  --accent-contrast: #0b0b0e;
+  --scrim: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  transition: background var(--transition-med), color var(--transition-med);
+}

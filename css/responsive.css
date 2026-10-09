@@ -1,0 +1,23 @@
+@media (max-width: 980px) {
+  .metric-grid { grid-template-columns: repeat(3, 1fr); }
+  .dash-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .app { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .bottom-nav { display: flex; }
+  .fab-add { display: flex; }
+  .main { padding: 20px 16px 96px; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .field-row { grid-template-columns: 1fr; }
+  .calendar-cell { min-height: 64px; }
+  .history-stats { gap: 10px; }
+  .recurring-row-main { flex-wrap: wrap; }
+}
+
+@media (max-width: 480px) {
+  .metric-grid { grid-template-columns: 1fr 1fr; }
+  .page-title { font-size: 20px; }
+  .modal { max-width: 100%; }
+}
